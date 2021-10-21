@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>To Do List</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device.width,initial-scale=1">
+        <link rel="stylesheet" href="">
+        <style>
+            body{
+                background-color:#F0EDEE;
+                font-family: 'Montserrat', sans-serif;
+                padding-top:5%;
+                padding-bottom: 5%;
+
+
+
+            }
+            .container{
+                max-width: 550px;
+                margin: auto;
+                background-color: #F0EDEE;
+                -webkit-box-shadow: 2px 2px 13px -4px rgba(0,0,0,0.21);
+                box-shadow: 2px 2px 13px -4px rgba(0,0,0,0.21);
+               
+            }
+
+            h1,
+            h2,
+            h3,
+            h4
+            {
+                font-family:'Raleway',sans-serif;
+                color:#F0EDEE;
+            }
+
+            a,
+            p
+            {
+                color:#DB7F67;
+                
+            }
+            .headerbar{
+                display: flex;
+                justify-content: space-between;
+                color: black;
+                padding: 10px;
+                border-radius: 5px 5px 0 0;
+                background:linear-gradient(90deg,#513B3C 0%, #655356 43%, #DB7F67 100%);
+
+            }
+            .headerbar a {
+                color: #F0EDEE;
+                text-decoration: none;
+        
+            }
+            .task-wrapper{
+                display: flex;
+                align-items: center;
+                justify-content: space-between;
+                padding: 20px;
+                background-color: #F0EDEE;
+                border-top: 1px solid rgb(226,226,226);
+            }
+            .task-title{
+                display: flex;
+            }
+            .task-title a {
+                text-decoration: none;
+                margin-left: 10px;
+                color:#DB7F67 ;
+
+            }
+            .task-complete-icon{
+                height: 20px;
+                width: 20px;
+                background-color: rgb(105,192,105);
+                border-radius: 50%;
+            }
+            .task-incomplete-icon{
+                height: 20px;
+                width: 20px;
+                background-color: rgb(218,218,218);
+                border-radius: 50%;
+            }
+            .delete-link{
+                text-decoration: none;
+                font-weight: 900;
+                color: #cf4949;
+                font-size: 22px;
+                line-height: 0;
+            }
+            #search-add-wrapper{
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+                padding: 10px;
+            }
+            #add-link{
+                color:#EB796F;
+                text-shadow: 1px 1px #81413B;
+                text-decoration:none;
+                font-size: 42px;
+
+            }
+            input[type=text],
+            input[type=password],
+            textarea{
+                border: 1px solid #EB796F;
+                border-radius: 5px;
+                padding: 10px;
+                width: 90%;
+                        }
+            label{
+                padding-top: 10px !important;
+                display: block;
+            }
+            .button{
+                border:1px solid #eb796f;
+                background-color: #fafafa;
+                color: #eb796f;
+                padding: 10px;
+                font-size: 14px;
+                border-radius: 5px;
+                cursor: pointer;
+                text-decoration:none;
+            }
+            .card-body{
+                padding: 20px;
+            }
+        </style>
+    
+    
+    </head>
+    <body>
+         <div class="container">
+             {% block content %}
+             {% endblock content %}
+
+         </div>
+    </body>
+</html>
